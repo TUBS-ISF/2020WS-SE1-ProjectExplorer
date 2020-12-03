@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.control.TreeView?>
 <?import javafx.scene.image.Image?>
@@ -8,7 +9,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.stage.Stage?>
 
-<Stage xmlns="http://javafx.com/javafx/8.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="isf.view.ExplorerController">
+<Stage xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="isf.view.ExplorerController">
    <scene>
       <Scene>
          <root>
@@ -27,6 +28,13 @@
                <center>
                   <TreeView fx:id="explorerTree" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
                </center>
+               <bottom>
+                  <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <items>
+                        <Button mnemonicParsing="false" onMouseClicked="#mouseAction" text="Button" />
+                     </items>
+                  </ToolBar>
+               </bottom>
             </BorderPane>
          </root>
       </Scene>
